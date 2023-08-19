@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+    background: rgb(201, 224, 231);
+    font-family: 'lora',serif;
+}
+
+header{
+    background-color: rgb(41, 100, 110);
+    height:65px; 
+}
+header *{
+    color: rgb(180, 203, 223);
+}
+header .logo{
+    float:left;
+    height: inherit;
+    margin-left: 2em; 
+   
+}
+h1.logo-text{
+    margin:8px;
+    font-family: 'canda',serif;
+}
+h1.logo-text span{
+    color: aqua;
+}
+header ul{
+    float:right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+   
+}
+header ul li{
+    float: left;
+    position: relative;
+
+}
+header ul li ul{
+    position:absolute;
+    top:66px;
+    right:0px;
+    width: 180px;
+    display:none;
+
+}
+header ul li:hover ul{
+    display: block;
+
+}
+header ul li ul li{
+    width:100%;
+}
+
+header ul li ul li a{
+    padding:12px;
+    left: 0px;
+    background-color: rgb(115, 119, 119);
+    padding:#444;
+
+}
+header ul li ul li a.logout{
+    color: red;
+}
+header ul li ul li a:hover{
+    background-color:rgb(12, 51, 73);
+}
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+header ul li a:hover{
+    background-color: rgb(12, 51, 73);
+    transition: 0.5s;
+}
+
+
+
+header .menue-toggle {
+    display:none;
+}
